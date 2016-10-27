@@ -274,7 +274,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     atoms: set("false true null unknown"),
     operatorChars: /^[*+\-%<>!=]/,
     dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable doubleQuote binaryNumber hexNumber")
+    support: set("doubleQuote binaryNumber hexNumber")
   });
 
   CodeMirror.defineMIME("text/x-mssql", {
@@ -298,7 +298,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     atoms: set("false true null unknown"),
     operatorChars: /^[*+\-%<>!=&|^]/,
     dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
+    support: set("decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
     hooks: {
       "@":   hookVar,
       "`":   hookIdentifier,
@@ -314,7 +314,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     atoms: set("false true null unknown"),
     operatorChars: /^[*+\-%<>!=&|^]/,
     dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
+    support: set("decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
     hooks: {
       "@":   hookVar,
       "`":   hookIdentifier,
@@ -355,7 +355,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     atoms: set("false true null unknown"),
     operatorChars: /^[*+\-%<>!=]/,
     dateSQL: set("date timestamp"),
-    support: set("ODBCdotTable doubleQuote binaryNumber hexNumber")
+    support: set("doubleQuote binaryNumber hexNumber")
   });
 
   CodeMirror.defineMIME("text/x-pgsql", {
@@ -368,7 +368,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     atoms: set("false true null unknown"),
     operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
     dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber nCharCast charsetCast")
+    support: set("decimallessFloat zerolessFloat binaryNumber hexNumber nCharCast charsetCast")
   });
 
   // Google's SQL-like query language, GQL
@@ -397,7 +397,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     Commands parsed and executed by the client (not the server).
   support:
     A list of supported syntaxes which are not common, but are supported by more than 1 DBMS.
-    * ODBCdotTable: .tableName
+    * ODBCdotTable: .tableName - NOTE: unused at the moment
     * zerolessFloat: .1
     * doubleQuote
     * nCharCast: N'string'
