@@ -1,6 +1,6 @@
 {
   "name": "codemirror-sql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/codemirror.js",
   "description": "Another SQL mode for CodeMirror",
   "license": "MIT",
