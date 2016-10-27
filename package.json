@@ -1,8 +1,8 @@
 {
-  "name": "codemirror",
-  "version": "5.20.3",
+  "name": "codemirror-sql",
+  "version": "0.0.1",
   "main": "lib/codemirror.js",
-  "description": "Full-featured in-browser code editor",
+  "description": "Another SQL mode for CodeMirror",
   "license": "MIT",
   "directories": {
     "lib": "./lib"
@@ -22,23 +22,23 @@
     "rollup-plugin-buble": "^0.14.0",
     "rollup-watch": "^2.5.0"
   },
-  "bugs": "http://github.com/codemirror/CodeMirror/issues",
+  "bugs": "http://github.com/okramolis/CodeMirror/issues",
   "keywords": [
     "JavaScript",
     "CodeMirror",
-    "Editor"
+    "Editor",
+    "SQL"
   ],
-  "homepage": "http://codemirror.net",
+  "homepage": "https://github.com/okramolis/CodeMirror",
   "maintainers": [
     {
-      "name": "Marijn Haverbeke",
-      "email": "marijnh@gmail.com",
-      "web": "http://marijnhaverbeke.nl"
+      "name": "Ondrej Kramolis",
+      "email": "o.kramolis@seznam.cz"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/codemirror/CodeMirror.git"
+    "url": "https://github.com/okramolis/CodeMirror.git"
   },
   "jspm": {
     "directories": {},
